@@ -4,18 +4,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #2E4F4F;
 }
 
 .container {
     display: grid;
-    outline: solid 1px red;
+    background-color: #99ced0;
     height: 800px;
     width: 800px;
     grid-template-columns:repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
-    gap: 20px;
+    gap: 5px;
 }
 
 .griditem {
-    outline: solid 1px blue;
+    background-color: #CBE4DE;
 }

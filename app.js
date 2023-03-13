@@ -18,7 +18,16 @@ function createDivs() {
     for (let i = 0; i < gridCells; i++) {
         const div = document.createElement("div");
         div.classList.add("griditem");
+
+        //event listener to change bg color on hover on every new div created
+        div.addEventListener("mouseover" , () => {
+            div.style.backgroundColor = "darkblue"
+        })
+
+
         container.appendChild(div);
         
-    }
+        
+}
+
 }
