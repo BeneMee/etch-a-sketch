@@ -10,8 +10,8 @@ body {
 .container {
     display: grid;
     background-color: #99ced0;
-    height: 800px;
-    width: 800px;
+    height: 600px;
+    width: 600px;
     grid-template-columns:repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
     gap: 5px;
@@ -19,4 +19,18 @@ body {
 
 .griditem {
     background-color: #CBE4DE;
+}
+
+#btn {
+    margin-right: 20px;
+    font-size: 1.5rem;
+    background-color: #0E8388;
+    color: aliceblue;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#btn:hover {
+    background-color: #619a9c;
 }
