@@ -14,7 +14,7 @@ body {
     width: 600px;
     grid-template-columns:repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
-    gap: 5px;
+    gap: 0px;
 }
 
 .griditem {
@@ -22,6 +22,7 @@ body {
 }
 
 #btn {
+    display: inline;
     margin-right: 20px;
     font-size: 1.5rem;
     background-color: #0E8388;
@@ -32,5 +33,25 @@ body {
 }
 
 #btn:hover {
+    background-color: #619a9c;
+}
+
+.btn-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#raster-button {
+    margin-right: 20px;
+    font-size: 1.5rem;
+    background-color: #0E8388;
+    color: aliceblue;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+#raster-button:hover {
     background-color: #619a9c;
 }
