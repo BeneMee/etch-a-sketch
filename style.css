@@ -9,16 +9,17 @@ body {
 
 .container {
     display: grid;
-    background-color: #99ced0;
+    background-color: #ffffff;
     height: 600px;
     width: 600px;
     grid-template-columns:repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
     gap: 0px;
+    box-shadow: 10px 10px rgb(51, 215, 215);
 }
 
 .griditem {
-    background-color: #CBE4DE;
+    background-color: #ffffff;
 }
 
 #btn {
@@ -39,6 +40,7 @@ body {
 .btn-wrapper {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #raster-button {
@@ -54,4 +56,10 @@ body {
 
 #raster-button:hover {
     background-color: #619a9c;
+}
+
+#colorwheel {
+    font-size: 1.5rem;
+    margin-top: 25px;
+    margin-right: 10px;
 }

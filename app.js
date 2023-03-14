@@ -14,6 +14,11 @@ let gridCols = gridComputed
 let gridCells = gridRows * gridCols;
 let drawState = false;
 const btn = document.querySelector("#btn");
+const colorWheel = document.querySelector("#colorwheel");
+let bgColor = gridComputed.getPropertyValue("background-color");
+
+
+let color = colorWheel.value;
 
 window.onload = createDivs();
 
@@ -49,12 +54,14 @@ function createDivs() {
 
     div.addEventListener("mouseenter", (e) => {
       if (drawState) {
-        e.target.style.backgroundColor = "black";
+        color = colorWheel.value;
+        e.target.style.backgroundColor = color;
       }
     });
 
     div.addEventListener("mousedown", (e) => {
-      e.target.style.backgroundColor = "black";
+        color = colorWheel.value;
+      e.target.style.backgroundColor = color;
     });
   }
 }
@@ -64,7 +71,7 @@ function createDivs() {
 function resetCanvas() {
   let allDivs = document.querySelectorAll(".griditem");
   for (let i = 0; i < allDivs.length; i++) {
-    allDivs[i].style.backgroundColor = "#CBE4DE";
+    allDivs[i].style.backgroundColor = bgColor;
   }
 }
 
@@ -95,3 +102,7 @@ rasterBtn.addEventListener("click", () => {
     alert("pls enter a number smaller than 100!");
   
 });
+
+//Change color of "pencil"
+
+
